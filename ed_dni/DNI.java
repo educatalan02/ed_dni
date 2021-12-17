@@ -24,11 +24,7 @@ public class DNI {
 
     public static void mostrarLetraDNI(String dni) {
 
-        char letter = (char) (Integer.parseInt(dni) % 23);
-
-        String aux = "";
-        aux += letra[letter];
-
+        char letterAux = (char) (Integer.parseInt(dni) % 23);
         // HABIAMOS HECHO UN SWITCH PERO NOS HEMOS DADO CUENTA QUE HAY OTRA MANERA MAS
         // SENCILLA
         /*
@@ -126,7 +122,7 @@ public class DNI {
          * }
          */
 
-        System.out.println("La letra del DNI " + dni + " es " + aux);
+        System.out.println("La letra del DNI " + dni + " es " + letra[letterAux]);
     }
 
 }

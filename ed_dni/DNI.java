@@ -15,9 +15,9 @@ public class DNI {
         }
 
     }
-    public void mostrarLetraDNI(int letra){
-        letra = numeroDNI % 23;
-        System.out.println("La letra del DNI " + numeroDNI + " es " + letra);
+    public void mostrarLetraDNI(int numletra){
+        numletra = numeroDNI % 23;
+        System.out.println("La letra del DNI " + numeroDNI + " es " + numletra);
 }
 
 }

@@ -7,8 +7,8 @@ public class DNI {
         if (args.length==0){
             System.out.println("ERROR: Debes pasar el numero del DNI como argumento");
         } else{
-            System.out.println(mostrarLetraDNI());
-            System.out.println(crearCadenaDNI());
+            System.out.println("La letra del DNI " + args[0] + " es " + mostrarLetraDNI(Integer.parseInt(args[0])));
+            System.out.println("El DNI completo es " + crearCadenaDNI(Integer.parseInt(args[0])));
         }
 
        

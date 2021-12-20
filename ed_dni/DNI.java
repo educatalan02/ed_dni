@@ -8,9 +8,9 @@ public class DNI {
     }
 
     public static String crearCadenaDNI(int n) {
-        String dni = Integer.toString(n);
+        
 
-        return String.format("%8s", dni).replace(" ", "0") + mostrarLetraDNI(n));
+        return String.format("%8s", Integer.toString(n)).replace(" ", "0") + mostrarLetraDNI(n));
     }
 
 }
